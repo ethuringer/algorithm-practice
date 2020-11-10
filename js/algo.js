@@ -88,24 +88,43 @@ getEvenNumbers(numericArray1); */
 
 // 7.
 
-const numericArray1 = [215, 523, 531486, 4785, 457, 25, 4];
+/* const numericArray1 = [215, 523, 531486, 4785, 457, 25, 4];
 
 
 function getThirdMaxElementOfAnArray(numericArray1) {
     let max = numericArray1[0];
     let max2 = numericArray1[0];
+    let max3 = numericArray1[0];
     for (let i = 0; i < numericArray1.length; i += 1) {
         if (numericArray1[i] > max) {
             max2 = max
             max = numericArray1[i];
         }
-        else {
-            (numericArray1[i] > max2 && numericArray1[i] != max)
+        else if
+            (numericArray1[i] > max2 && numericArray1[i] != max) {
+            max3 = max2
             max2 = numericArray1[i];
         }
+        else if
+            (numericArray1[i] > max3 && numericArray1[i] != max2) {
+            max3 = numericArray1[i];
+        }
+
     }
 
-    console.log(max2);
+    console.log(max3);
 }
-getThirdMaxElementOfAnArray(numericArray1);
+getThirdMaxElementOfAnArray(numericArray1); */
 
+// 8.
+const numericArray1 = [215, 523, 23, 531486, 4785, 457, 25, 4];
+
+function containsParameter(numericArray1) {
+    let contains = false;
+    for (let i = 0; i < numericArray1.length && contains == false; i += 1)
+    if (numericArray1[i] == 23) {
+        contains = true;
+    }
+    console.log(contains);
+}
+containsParameter(numericArray1);
