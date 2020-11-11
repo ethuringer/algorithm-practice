@@ -117,7 +117,7 @@ function getThirdMaxElementOfAnArray(numericArray1) {
 getThirdMaxElementOfAnArray(numericArray1); */
 
 // 8.
-const numericArray1 = [215, 523, 23, 531486, 4785, 457, 25, 4];
+/* const numericArray1 = [215, 523, 'számok', 531486, 4785, 457, 25, 4];
 
 function containsParameter(numericArray1) {
     let contains = false;
@@ -127,4 +127,36 @@ function containsParameter(numericArray1) {
     }
     console.log(contains);
 }
-containsParameter(numericArray1);
+containsParameter(numericArray1); */
+
+// 9.
+
+
+/* function binarySearch(numericArray1, search) {
+    let start = 0;
+    let end = numericArray1.length - 1;
+
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+    
+    if (numericArray1[middle] === search) {
+        return true
+    } 
+    else if (numericArray1[middle] < search) 
+        start = middle + 1;
+    else 
+        end = middle - 1;
+        counter += 1;
+    } 
+        return false;
+
+}
+
+const numericArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+console.log(binarySearch(numericArray1, 6)); */
+
+console.log('Hello');
+
+
+
