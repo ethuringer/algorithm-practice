@@ -158,7 +158,7 @@ console.log(binarySearch(numericArray1, 6)); */
 
 // 10.
 
-const mixArray = [15, 247, 654, 23, 'cat', 47, 599, 23, 623, 45, 68];
+/* const mixArray = [15, 247, 654, 23, 'cat', 47, 599, 23, 623, 45, 68];
 
 function containsParameterDb(mixArray) {
     let db = 0;
@@ -169,4 +169,54 @@ function containsParameterDb(mixArray) {
     }
     console.log(db);
 }
-containsParameterDb(mixArray);
+containsParameterDb(mixArray); */
+
+// 11.
+
+/* const numericArray2 = [1.145, 58.456, 87.145, 4521.45782, 457.14];
+
+function bubbleSort(arr) {
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < arr.length; i += 1) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped)
+    return arr;
+}
+
+console.log(bubbleSort(numericArray2)); */
+
+// 12.
+
+const mixArray3 = [1.145, 14, 3, 'cat', 7851, true, 7412, 'dog', 7.7842];
+
+function bubbleSort(arr) {
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < arr.length; i += 1) {
+            if (arr[i] > arr[i + 1] ) {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
+            }
+            else if (typeof arr[i] != 'number' && typeof arr[i+1] === 'number') {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped)
+    return arr;
+}
+
+console.log(bubbleSort(mixArray3));
