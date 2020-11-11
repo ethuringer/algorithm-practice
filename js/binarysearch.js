@@ -12,7 +12,6 @@ function binarySearch(numericArray1, search) {
         start = middle + 1;
     else 
         end = middle - 1;
-        counter += 1;
     } 
         return false;
 
