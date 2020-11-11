@@ -156,7 +156,17 @@ const numericArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 console.log(binarySearch(numericArray1, 6)); */
 
-console.log('Hello');
+// 10.
 
+const mixArray = [15, 247, 654, 23, 'cat', 47, 599, 23, 623, 45, 68];
 
-
+function containsParameterDb(mixArray) {
+    let db = 0;
+    for (let i = 0; i < mixArray.length; i += 1) {
+        if (mixArray[i] === 23) {
+            db++;
+        } 
+    }
+    console.log(db);
+}
+containsParameterDb(mixArray);
