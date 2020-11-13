@@ -223,7 +223,7 @@ console.log(bubbleSort(mixArray3)); */
 
 // 14.
 
-const mixedArray = [454, 365, 'cat', 21, 'dog', 'elephant'];
+/* const mixedArray = [454, 365, 'cat', 21, 'dog', 'elephant'];
 
 function selectNumbers(arr) {
     let numbers = [];
@@ -244,7 +244,7 @@ function selectNumbers(arr) {
     console.log(sortedArray)
 }
 selectNumbers(mixedArray);
-
+ */
 
 // 15.
 
@@ -267,3 +267,65 @@ console.log('Páratlan számok : ' + oddArray);
 
 selectNumbers(arr); */
 
+// 16.
+
+
+
+
+/* function segment(arr1, arr2) {
+    const arrSegment = [];
+for (let i = 0; i < arr1.length; i += 1) 
+    for (let j = 0; j < arr2.length; j += 1) {
+        if (arr1[i] === arr2[j]) {
+            arrSegment.push(arr1[i]);
+        }
+    }
+console.log(arrSegment);
+
+}
+segment(numbers1, numbers2); */
+
+
+/* function union(arr1, arr2) {
+    let unionArr = [];
+    for (let i = 0; i < arr1.length; i += 1)
+        for (let j = 0; j < arr2.length; j += 1) {
+            if (arr1[i] === arr2[j]) {
+                arr2.splice(j, 1);
+            }
+        }
+    unionArr = arr1.concat(arr2);
+    console.log(unionArr);
+
+}
+union(numbers1, numbers2);
+ */
+
+
+/* function difference(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i += 1)
+        for (let j = 0; j < arr2.length; j += 1) {
+            if (arr1[i] === arr2[j]) {
+                arr1.splice(i, 1);
+                arr2.splice(j, 1);
+            }
+        }
+    console.log(arr1);
+    console.log(arr2);
+}
+difference(numbers1, numbers2); */
+
+
+const numbers1 = [125, 457, 45, 356, 36, 47, 85, 84];
+const numbers2 = [47, 656, 68, 74, 647, 356, 784, 89];
+
+function descartes(arr1, arr2) {
+    let arrDesc=[];
+    for (let i = 0; i < arr1.length; i += 1)
+    for (let j = 0; j < arr2.length; j += 1) {
+        arrDesc.push([].concat(arr1[i],arr2[j]))
+        }
+    
+console.log(arrDesc);
+}
+descartes(numbers1, numbers2);
