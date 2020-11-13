@@ -221,9 +221,34 @@ function bubbleSort(arr) {
 
 console.log(bubbleSort(mixArray3)); */
 
+// 14.
+
+const mixedArray = [454, 365, 'cat', 21, 'dog', 'elephant'];
+
+function selectNumbers(arr) {
+    let numbers = [];
+    let strings = [];
+    let sortedArray =[];
+    for (let i = 0; i < arr.length; i += 1) {
+        if (typeof arr[i] === 'number') {
+            numbers.push(arr[i]);
+        } else {
+            strings.push(arr[i]);
+        }
+    }
+    for (let i = 0; i < numbers.length; i += 1) {
+        sortedArray.push(numbers[i]);
+        sortedArray.push(strings[i]);
+        
+    }
+    console.log(sortedArray)
+}
+selectNumbers(mixedArray);
+
+
 // 15.
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 function selectNumbers(arr) {
     let evenArray = [];
@@ -240,4 +265,5 @@ console.log('Páros számok : ' + evenArray);
 console.log('Páratlan számok : ' + oddArray);
 }
 
-selectNumbers(arr);
+selectNumbers(arr); */
+
